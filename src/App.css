@@ -245,13 +245,22 @@
 }
 
 
-/* Join Us */
 .join-us {
-  padding: 2rem;
+  background-image: url('/images/join us.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px; /* make the section taller */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(111, 109, 109);
   text-align: center;
-  background-color: #007bff;
-  color: white;
+  padding: 2rem;
 }
+
+
 
 .join-us a {
   display: inline-block;

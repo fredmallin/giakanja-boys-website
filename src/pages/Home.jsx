@@ -101,12 +101,12 @@ function Home() {
 
      <section className="stats">
   <div className="stat">
-    <img src="/images/teacher.png" alt="Teachers" className="stat-icon" />
+    <img src="/images/group.png" alt="Teachers" className="stat-icon" />
     <h3 className="count" data-target="32">0</h3>
     <p>Teachers</p>
   </div>
   <div className="stat">
-    <img src="/images/student.png" alt="Students" className="stat-icon" />
+    <img src="/images/team.png" alt="Students" className="stat-icon" />
     <h3 className="count" data-target="601">0</h3>
     <p>Students</p>
   </div>
@@ -116,7 +116,7 @@ function Home() {
     <p>Classrooms</p>
   </div>
   <div className="stat">
-    <img src="/images/years.png" alt="Years" className="stat-icon" />
+    <img src="/images/calendar.png" alt="Years" className="stat-icon" />
     <h3 className="count" data-target="17">0</h3>
     <p>Years</p>
   </div>
