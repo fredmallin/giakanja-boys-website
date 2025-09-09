@@ -16,7 +16,7 @@ function Home() {
       <section className="messages">
         <div className="message-card">
           <img
-            src="/images/principal.jpg"
+            src="/images/senior.jpeg"
             alt="Mrs. Jane Mwangi"
             className="message-img"
           />
@@ -29,7 +29,7 @@ function Home() {
 
         <div className="message-card">
           <img
-            src="/images/bom-chairperson.jpg"
+            src="/images/principal.jpeg"
             alt="Dr. Josephine Kinya"
             className="message-img"
           />
@@ -42,7 +42,7 @@ function Home() {
 
         <div className="message-card">
           <img
-            src="/images/pa-chairperson.jpg"
+            src="/images/chair.jpeg"
             alt="Mr. Isaac Nyabicha"
             className="message-img"
           />
@@ -59,17 +59,17 @@ function Home() {
   <h2>Our Offerings</h2>
   <div className="offering-cards">
     <div className="offering-card">
-      <img src="/images/academics.jpg" alt="Academics" className="offering-img" />
+      <img src="/images/Academics.jpeg" alt="Academics" className="offering-img" />
       <h3>Academics</h3>
       <p>Our rigorous curriculum is designed to challenge and inspire students...</p>
     </div>
     <div className="offering-card">
-      <img src="/images/arts.jpg" alt="Arts" className="offering-img" />
+      <img src="/images/arts.jpeg" alt="Arts" className="offering-img" />
       <h3>Arts</h3>
       <p>Explore creativity through our vibrant arts program that encourages self-expression...</p>
     </div>
     <div className="offering-card">
-      <img src="/images/extracurricular.jpg" alt="Extra-Curricular Activities" className="offering-img" />
+      <img src="/images/sports.jpeg" alt="Extra-Curricular Activities" className="offering-img" />
       <h3>Extra-Curricular Activities</h3>
       <p>Our vibrant extra-curricular programs promote teamwork, sports, and clubs...</p>
     </div>
