@@ -1,3 +1,4 @@
+
 /* Navbar */
 .navbar {
   position: sticky;       /* keeps it at the top when scrolling */
@@ -15,6 +16,25 @@
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+/* Brand (Logo + Name) */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.school-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%; /* circular logo */
+}
+
+.school-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffca28; /* golden yellow */
 }
 
 .nav-links {

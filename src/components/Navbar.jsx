@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar">
+      {/* Left: Logo + School Name */}
+      <div className="navbar-brand">
+        <img src="/images/schoollogo.jpeg" alt="School Logo" className="school-logo" />
+        <span className="school-name">Giakanja Boys</span>
+      </div>
+
+      {/* Right: Links */}
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
