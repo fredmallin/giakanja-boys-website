@@ -20,7 +20,7 @@ function Home() {
             alt="Mrs. Jane Mwangi"
             className="message-img"
           />
-          <h2>Mrs. Jane Mwangi - Senior Principal</h2>
+          <h2>Mr. Onesmas Mwangi - Senior Principal</h2>
           <p>
             Welcome to Giakanja Boys, where we empower young men to reach their full potential...
           </p>
@@ -76,48 +76,51 @@ function Home() {
   </div>
 </section>
 
-      {/* Values */}
       <section className="values">
-        <h2>Our Values</h2>
-        <div className="value-cards">
-          <div>
-            <h3>Motto</h3>
-            <p>Scaling The Heights Of Education.</p>
-          </div>
-          <div>
-            <h3>Vision</h3>
-            <p>A Preferred School Of Choice For Nurturing A Holistic Learner.</p>
-          </div>
-          <div>
-            <h3>Mission</h3>
-            <p>To Provide A Progressive Environment For Learners To Exploit Their Full Potential...</p>
-          </div>
-          <div>
-            <h3>Core Values</h3>
-            <p>Integrity, Godliness, Teamwork, Professionalism, Social responsibility, Courtesy, Commitment.</p>
-          </div>
-        </div>
-      </section>
+  <h2>Our Values</h2>
+  <div className="value-cards">
+    <div className="value-card">
+      <img src="/images/motto.png" alt="Motto" />
+      <h3>Motto</h3>
+      <p>Scaling The Heights Of Education.</p>
+    </div>
+    <div className="value-card">
+      <img src="/images/vision.png" alt="Vision" />
+      <h3>Vision</h3>
+      <p>A Preferred School Of Choice For Nurturing A Holistic Learner.</p>
+    </div>
+    <div className="value-card">
+      <img src="/images/mission.png" alt="Mission" />
+      <h3>Mission</h3>
+      <p>To Provide A Progressive Environment For Learners To Exploit Their Full Potential...</p>
+    </div>
+    <div className="value-card">
+      <img src="/images/values.png" alt="Core Values" />
+      <h3>Core Values</h3>
+      <p>Integrity, Godliness, Teamwork, Professionalism, Social responsibility, Courtesy, Commitment.</p>
+    </div>
+  </div>
+</section>
 
      <section className="stats">
   <div className="stat">
     <img src="/images/group.png" alt="Teachers" className="stat-icon" />
-    <h3 className="count" data-target="32">0</h3>
+    <h3 className="count" data-target="32">50+</h3>
     <p>Teachers</p>
   </div>
   <div className="stat">
     <img src="/images/team.png" alt="Students" className="stat-icon" />
-    <h3 className="count" data-target="601">0</h3>
+    <h3 className="count" data-target="601">1200+</h3>
     <p>Students</p>
   </div>
   <div className="stat">
     <img src="/images/classroom.png" alt="Classrooms" className="stat-icon" />
-    <h3 className="count" data-target="15">0</h3>
+    <h3 className="count" data-target="15">20+</h3>
     <p>Classrooms</p>
   </div>
   <div className="stat">
     <img src="/images/calendar.png" alt="Years" className="stat-icon" />
-    <h3 className="count" data-target="17">0</h3>
+    <h3 className="count" data-target="17">60+</h3>
     <p>Years</p>
   </div>
 </section>
