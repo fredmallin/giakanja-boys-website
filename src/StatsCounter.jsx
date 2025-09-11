@@ -23,7 +23,7 @@ function StatsCounter() {
               counter.innerText = count + increment;
               setTimeout(updateCount, 20);
             } else {
-              counter.innerText = target;
+              counter.innerText = target + "+"; 
             }
           };
           updateCount();
