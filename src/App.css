@@ -991,3 +991,67 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+.events-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  color: #0a0a0a;
+  font-family: Arial, sans-serif;
+}
+
+.events-page h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #003366; /* School-themed color */
+}
+
+.events-page p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.event-card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.event-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.event-card h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.event-card.past {
+  background: #e0e0e0; /* lighter for past events */
+}
