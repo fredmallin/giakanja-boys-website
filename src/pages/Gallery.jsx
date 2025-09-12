@@ -17,7 +17,7 @@ function Gallery() {
   return (
     <div className="page-container">
       <section className="gallery">
-        <h1>Gallery</h1>
+        <h1>School Gallery</h1>
         <p>Explore moments from our school life, classrooms, events, and student activities.</p>
 
         <div className="gallery-grid">
