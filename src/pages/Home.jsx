@@ -10,7 +10,7 @@ function Home() {
     <div>
       {/* Hero Section */}
       <section className="hero">
-        <h1>Giakanja Boys</h1>
+        <h1>Giakanja Boys high school</h1>
         <p>
           Empowering students to achieve excellence in academics and character.
         </p>
@@ -114,15 +114,14 @@ function Home() {
             <img src="/images/vision.png" alt="Vision" />
             <h3>Vision</h3>
             <p>
-              A Preferred School Of Choice For Nurturing A Holistic Learner.
+              To be a leading institution in producing well-rounded individuals who excel academically, socially, and morally, contributing positively to society and the nation.
             </p>
           </div>
           <div className="value-card">
             <img src="/images/mission.png" alt="Mission" />
             <h3>Mission</h3>
             <p>
-              To Provide A Progressive Environment For Learners To Exploit Their
-              Full Potential...
+              To provide quality education that nurtures academic excellence, discipline, and holistic development in a conducive environment, empowering students to become responsible and innovative leaders.
             </p>
           </div>
           <div className="value-card">

@@ -14,7 +14,7 @@ function Navbar() {
           alt="School Logo"
           className="school-logo"
         />
-        <span className="school-name">Giakanja Boys</span>
+        <span className="school-name">Giakanja Boys high school</span>
       </div>
 
       {/* Hamburger menu button (mobile only) */}
