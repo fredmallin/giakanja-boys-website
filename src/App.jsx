@@ -11,7 +11,7 @@ import Assignments from "./pages/Assignments";
 import Events from "./pages/Events";
 import Offerings from "./pages/Offerings";
 import Blog from "./pages/Blog";
-import Tenders from "./pages/Tenders";
+import Management from "./pages/Management";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/offerings" element={<Offerings />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/tenders" element={<Tenders />} />
+          <Route path="/management" element={<Management />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

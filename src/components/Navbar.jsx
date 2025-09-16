@@ -29,13 +29,13 @@ function Navbar() {
       {/* Right: Links */}
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-        <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-        <li><Link to="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link></li>
+        <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li> 
         <li><Link to="/assignments" onClick={() => setIsOpen(false)}>Assignments</Link></li>
+<li><Link to="/management" onClick={() => setIsOpen(false)}>Management</Link></li>
+<li><Link to="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link></li>
         <li><Link to="/events" onClick={() => setIsOpen(false)}>Events</Link></li>
         <li><Link to="/offerings" onClick={() => setIsOpen(false)}>Offerings</Link></li>
         <li><Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link></li>
-        <li><Link to="/tenders" onClick={() => setIsOpen(false)}>Tenders</Link></li>
         <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
       </ul>
     </nav>

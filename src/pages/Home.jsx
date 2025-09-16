@@ -2,20 +2,25 @@ import React from "react";
 import "../App.css";
 import StatsCounter from "../StatsCounter";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import Hero from "../components/Hero";
 
 function Home() {
   useScrollAnimation();
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="hero">
-        <h1>Giakanja Boys high school</h1>
-        <p>
-          Empowering students to achieve excellence in academics and character.
-        </p>
-        <a href="/assignments">View Assignments</a>
-      </section>
+      <Hero
+  images={[
+    "/images/gallery.jpeg",
+    "/images/schoolgate3.jpg",
+     "/images/Management.jpg",
+
+  ]}
+  title="Giakanja Boys High School"
+  subtitle="Empowering students to achieve excellence in academics and character."
+  buttonText="View Assignments"
+  buttonLink="/assignments"
+/>
 
       {/* Principal & Chairperson Messages */}
       <section className="messages scroll-fade">

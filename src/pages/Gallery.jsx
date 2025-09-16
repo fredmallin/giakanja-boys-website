@@ -16,9 +16,21 @@ function Gallery() {
 
   return (
     <div className="page-container">
+      {/* Hero Section */}
+      <section className="hero gallery-hero">
+        <div className="hero-overlay">
+          <h1>Our School Gallery</h1>
+          <p>Capturing memories of learning, sports, and community at Giakanja Boys.</p>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
       <section className="gallery">
         <h1>School Gallery</h1>
-        <p>Explore moments from our school life, classrooms, events, and student activities.</p>
+        <p>
+          Explore moments from our school life, classrooms, events, and student
+          activities.
+        </p>
 
         <div className="gallery-grid">
           {galleryImages.map((img, index) => (
@@ -45,3 +57,4 @@ function Gallery() {
 }
 
 export default Gallery;
+

@@ -1,9 +1,12 @@
-import React from "react";
-import "../App.css"; 
+import React, { useState } from "react";
+import "../App.css";
 import useScrollAnimation from "../hooks/useScrollAnimation"; // import the scroll hook
 
 function About() {
   useScrollAnimation(); // activate scroll animations
+
+  // 🚀 Fix: define state for tabs
+  const [activeTab, setActiveTab] = useState("sports");
 
   return (
     <div className="page-container">
@@ -34,10 +37,96 @@ function About() {
         </p>
       </section>
 
+      {/* 🚀 Tabs Section (Directly under Our Vision) */}
+      <section className="about-tabs scroll-fade">
+        <div className="tabs">
+          <button
+            className={activeTab === "sports" ? "tab active" : "tab"}
+            onClick={() => setActiveTab("sports")}
+          >
+            Sports
+          </button>
+          <button
+            className={activeTab === "clubs" ? "tab active" : "tab"}
+            onClick={() => setActiveTab("clubs")}
+          >
+            Club & Societies
+          </button>
+          <button
+            className={activeTab === "exchange" ? "tab active" : "tab"}
+            onClick={() => setActiveTab("exchange")}
+          >
+            Exchange Program
+          </button>
+          <button
+            className={activeTab === "dorms" ? "tab active" : "tab"}
+            onClick={() => setActiveTab("dorms")}
+          >
+            Dormitories
+          </button>
+        </div>
+
+        <div className="tab-content">
+          {activeTab === "sports" && (
+            <div>
+              <h2>Sports</h2>
+              <p>The school offers Football, Basketball, Rugby, Athletics...</p>
+              <img src="/images/sports.jpg" alt="Sports" className="image" />
+            </div>
+          )}
+
+          {activeTab === "clubs" && (
+            <div>
+              <h2>Clubs & Societies</h2>
+              <div className="grid">
+                <div className="card">
+                  <img src="/images/science-club.jpg" alt="Science Club" />
+                  <p>Science Club: Innovating and doing experiments.</p>
+                </div>
+                <div className="card">
+                  <img src="/images/debate.jpg" alt="Debate Club" />
+                  <p>Debate Club: Sharpening critical thinking & speaking skills.</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeTab === "exchange" && (
+            <div>
+              <h2>Exchange Program</h2>
+              <p>
+                Our students take part in cultural and academic exchange with
+                partner schools worldwide.
+              </p>
+              <img src="/images/exchange.jpg" alt="Exchange" className="image" />
+            </div>
+          )}
+
+          {activeTab === "dorms" && (
+            <div>
+              <h2>Dormitories</h2>
+              <div className="grid">
+                <div className="card">
+                  <img src="/images/livingstone.jpg" alt="Livingstone House" />
+                  <p>Livingstone House: Named after Dr. David Livingstone</p>
+                </div>
+                <div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div>
+                <div className="card">
+                  <img src="/images/wilberforce.jpg" alt="Wilberforce House" />
+                  <p>Wilberforce House: Named after Sir William Wilberforce</p>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* Core Values */}
       <section className="about-values scroll-fade">
         <h2>Core Values</h2>
-
         <div className="values-grid">
           <div className="value-card scroll-fade">
             <img
@@ -60,8 +149,8 @@ function About() {
             />
             <h3>Godliness</h3>
             <p>
-              We ensure that each child is equipped with religious values,
-              making them able to fit into any religious society.
+              We ensure that each child is equipped with religious values, making
+              them able to fit into any religious society.
             </p>
           </div>
 
