@@ -10,7 +10,6 @@ import Gallery from "./pages/Gallery";
 import Assignments from "./pages/Assignments";
 import Events from "./pages/Events";
 import Offerings from "./pages/Offerings";
-import Blog from "./pages/Blog";
 import Management from "./pages/Management";
 import Contact from "./pages/Contact";
 
@@ -26,7 +25,6 @@ function App() {
           <Route path="/assignments" element={<Assignments />} />
           <Route path="/events" element={<Events />} />
           <Route path="/offerings" element={<Offerings />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/management" element={<Management />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

@@ -52,12 +52,7 @@ function About() {
           >
             Club & Societies
           </button>
-          <button
-            className={activeTab === "exchange" ? "tab active" : "tab"}
-            onClick={() => setActiveTab("exchange")}
-          >
-            Exchange Program
-          </button>
+         
           <button
             className={activeTab === "dorms" ? "tab active" : "tab"}
             onClick={() => setActiveTab("dorms")}
@@ -71,7 +66,7 @@ function About() {
             <div>
               <h2>Sports</h2>
               <p>The school offers Football, Basketball, Rugby, Athletics...</p>
-              <img src="/images/sports.jpg" alt="Sports" className="image" />
+              <img src="/images/sports.jpeg" alt="Sports" className="image" />
             </div>
           )}
 
@@ -80,25 +75,14 @@ function About() {
               <h2>Clubs & Societies</h2>
               <div className="grid">
                 <div className="card">
-                  <img src="/images/science-club.jpg" alt="Science Club" />
-                  <p>Science Club: Innovating and doing experiments.</p>
+                  <img src="/images/st john.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
                 </div>
                 <div className="card">
                   <img src="/images/debate.jpg" alt="Debate Club" />
                   <p>Debate Club: Sharpening critical thinking & speaking skills.</p>
                 </div>
               </div>
-            </div>
-          )}
-
-          {activeTab === "exchange" && (
-            <div>
-              <h2>Exchange Program</h2>
-              <p>
-                Our students take part in cultural and academic exchange with
-                partner schools worldwide.
-              </p>
-              <img src="/images/exchange.jpg" alt="Exchange" className="image" />
             </div>
           )}
 

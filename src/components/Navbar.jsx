@@ -35,7 +35,6 @@ function Navbar() {
 <li><Link to="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link></li>
         <li><Link to="/events" onClick={() => setIsOpen(false)}>Events</Link></li>
         <li><Link to="/offerings" onClick={() => setIsOpen(false)}>Offerings</Link></li>
-        <li><Link to="/blog" onClick={() => setIsOpen(false)}>Blog</Link></li>
         <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
       </ul>
     </nav>
