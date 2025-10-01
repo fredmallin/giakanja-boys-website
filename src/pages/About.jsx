@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import useScrollAnimation from "../hooks/useScrollAnimation"; // import the scroll hook
+import { Link } from "react-router-dom";
 
 function About() {
   useScrollAnimation(); // activate scroll animations
@@ -195,13 +196,14 @@ function About() {
 
       {/* Join Us */}
       <section className="join-us scroll-fade">
-        <h2>Get Involved</h2>
-        <p>
-          Discover how you can support the growth of our students and be part of
-          their successful journey in education.
-        </p>
-        <a href="/contact">Join Us</a>
-      </section>
+  <h2>Get Involved</h2>
+  <p>
+    Discover how you can support the growth of our students and be part of
+    their successful journey in education.
+  </p>
+  <Link to="/contact">Join Us</Link>
+</section>
+
     </div>
   );
 }
