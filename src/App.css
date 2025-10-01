@@ -115,6 +115,10 @@ body {
     text-align: left;
   }
 }
+.hero-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 
 /* ============================
    HERO SECTION (Reusable)
