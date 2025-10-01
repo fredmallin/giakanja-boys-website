@@ -3,6 +3,7 @@ import "../App.css";
 import StatsCounter from "../StatsCounter";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
 
 function Home() {
   useScrollAnimation();
@@ -168,15 +169,14 @@ function Home() {
         </div>
       </section>
 
-      {/* Join Us */}
       <section className="join-us scroll-fade">
-        <h2>Join Us</h2>
-        <p>
-          Giakanja Boys empowers students with high-quality education, fostering
-          academic excellence and confidence.
-        </p>
-        <a href="/contact">Get in Touch</a>
-      </section>
+  <h2>Join Us</h2>
+  <p>
+    Giakanja Boys empowers students with high-quality education, fostering
+    academic excellence and confidence.
+  </p>
+  <Link to="/contact">Get in Touch</Link>
+</section>
 
       <StatsCounter />
     </div>
