@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";  
 import "../App.css";
 
 function Hero({ images, title, subtitle, height = "100vh", buttonText, buttonLink }) {
@@ -7,7 +8,7 @@ function Hero({ images, title, subtitle, height = "100vh", buttonText, buttonLin
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000); // change every 5s
+    }, 5000);
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -20,14 +21,14 @@ function Hero({ images, title, subtitle, height = "100vh", buttonText, buttonLin
       }}
     >
       <div className="hero-overlay">
-  <h1>{title}</h1>
-  <p>{subtitle}</p>
-  {buttonText && buttonLink && (
-    <Link to={buttonLink} className="hero-btn">
-      {buttonText}
-    </Link>
-  )}
-</div>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+        {buttonText && buttonLink && (
+          <Link to={buttonLink} className="hero-btn">
+            {buttonText}
+          </Link>
+        )}
+      </div>
     </section>
   );
 }
