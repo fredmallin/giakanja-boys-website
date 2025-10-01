@@ -1438,3 +1438,67 @@ body {
 .btn-outline:hover {
   opacity: 0.85;
 }
+/* 📱 Mobile responsiveness fixes */
+@media (max-width: 768px) {
+  /* Values section */
+  .values-grid {
+    grid-template-columns: 1fr;  /* stack vertically */
+    padding: 0 10px;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 180px; 
+  }
+
+  /* Offerings / Programs */
+  .offering-cards,
+  .program-cards,
+  .why-cards {
+    flex-direction: column;   /* stack instead of row */
+    align-items: center;
+  }
+
+  .offering-card,
+  .program-card,
+  .why-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Stats */
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  /* Join Us text */
+  .join-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .join-us p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller screens */
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
