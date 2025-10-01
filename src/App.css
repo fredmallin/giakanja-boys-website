@@ -15,14 +15,14 @@ body {
   position: sticky; /* keeps it at the top when scrolling */
   top: 0;
   background-color: #0e9c66;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   color: white;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  flex-wrap: wrap; /* allow wrapping for small screens */
+   flex-wrap: nowrap;   
 }
 
 /* Brand (Logo + Name) */
@@ -39,11 +39,11 @@ body {
 }
 
 .school-name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;       /* smaller on default */
   font-weight: bold;
-  color: #ffca28; /* golden yellow */
+  color: #ffca28;
+  white-space: nowrap;     /* prevent wrapping on small screens */
 }
-
 /* Nav links (desktop default) */
 .nav-links {
   display: flex;
