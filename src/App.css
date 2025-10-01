@@ -1577,3 +1577,27 @@ body {
 section {
   background: #ffffff;  
 }
+/* Remove unexpected top space on mobile browsers */
+.hero-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Force hero to start directly below the navbar */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;  /* instead of sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Push the hero down just enough to be visible under navbar */
+.hero-section {
+  margin-top: 70px; /* Adjust this to match your navbar height */
+}
