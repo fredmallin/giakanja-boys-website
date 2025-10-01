@@ -20,14 +20,14 @@ function Hero({ images, title, subtitle, height = "100vh", buttonText, buttonLin
       }}
     >
       <div className="hero-overlay">
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
-        {buttonText && buttonLink && (
-          <a href={buttonLink} className="hero-btn">
-            {buttonText}
-          </a>
-        )}
-      </div>
+  <h1>{title}</h1>
+  <p>{subtitle}</p>
+  {buttonText && buttonLink && (
+    <Link to={buttonLink} className="hero-btn">
+      {buttonText}
+    </Link>
+  )}
+</div>
     </section>
   );
 }
