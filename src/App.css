@@ -336,7 +336,7 @@ body {
 }
 
 .message-card {
-  background-color: rgba(126, 123, 123, 0.1); /* optional transparent background */
+  background-color: rgba(126, 123, 123, 0.1); 
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
@@ -1502,3 +1502,71 @@ body {
     font-size: 0.9rem;
   }
 }
+/* 📱 Mobile responsiveness fixes */
+@media (max-width: 768px) {
+  /* --- Events Fix --- */
+  .event-card {
+    flex-direction: column; /* stack vertically */
+  }
+
+  .event-image img {
+    width: 100%;   /* take full width */
+    height: 200px; /* fixed height */
+  }
+
+  .event-date {
+    flex-direction: row; 
+    justify-content: space-around;
+    min-width: auto;
+    padding: 10px;
+  }
+
+  .event-date .day {
+    font-size: 1.5rem;
+  }
+
+  .event-content {
+    padding: 15px;
+  }
+
+  .event-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn, .btn-outline {
+    width: 100%;  /* full-width buttons on mobile */
+    text-align: center;
+  }
+
+  /* Events Hero should be shorter on mobile */
+  .events-hero {
+    height: 60vh; /* instead of full screen */
+    padding: 40px 15px;
+  }
+
+  .events-hero h1 {
+    font-size: 2rem;
+  }
+
+  .events-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller screens */
+  .events-hero {
+    height: 50vh;
+    padding: 30px 10px;
+  }
+
+  .events-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .events-hero p {
+    font-size: 0.9rem;
+  }
+}
+
