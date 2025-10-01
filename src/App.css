@@ -77,7 +77,6 @@ body {
   cursor: pointer;
 }
 
-/* -------- Responsive -------- */
 @media (max-width: 768px) {
   .menu-btn {
     display: block; /* show hamburger */
@@ -86,12 +85,14 @@ body {
   .nav-links {
     display: none; /* hide by default */
     flex-direction: column;
-    width: 100%;
+    position: absolute;   /* NEW: ensures it overlays properly */
+    top: 100%;            /* drops right below navbar */
+    left: 0;
+    width: 100%;          /* full width */
     background-color: #0f6d0f;
-    margin-top: 10px;
-    border-radius: 8px;
+    border-radius: 0 0 8px 8px;
     padding: 10px 0;
-    transition: max-height 0.3s ease-in-out;
+    z-index: 999;         /* keep on top of content */
   }
 
   .nav-links.open {
@@ -104,6 +105,7 @@ body {
     text-align: left;
   }
 }
+
 /* ============================
    HERO SECTION (Reusable)
    ============================ */
