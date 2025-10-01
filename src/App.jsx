@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -14,10 +14,16 @@ import Management from "./pages/Management";
 import Contact from "./pages/Contact";
 
 function App() {
+  const location = useLocation();
+
+  // If on Home page => no padding
+  // If on any other page => apply padding
+  const isHomePage = location.pathname === "/";
+
   return (
     <div>
       <Navbar />
-      <main style={{ padding: "1rem" }}>
+      <main style={{ padding: isHomePage ? "0" : "1rem" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
