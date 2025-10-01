@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "../App.css";
-import useScrollAnimation from "../hooks/useScrollAnimation"; // import the scroll hook
+import useScrollAnimation from "../hooks/useScrollAnimation"; 
 import { Link } from "react-router-dom";
 
 function About() {
-  useScrollAnimation(); // activate scroll animations
+  useScrollAnimation(); 
 
-  // 🚀 Fix: define state for tabs
   const [activeTab, setActiveTab] = useState("sports");
 
   return (

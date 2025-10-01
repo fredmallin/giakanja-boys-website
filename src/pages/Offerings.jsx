@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css"; // Make sure the path is correct
+import "../App.css"; 
+import { Link } from "react-router-dom";
 
 function Offerings() {
   const programs = [
@@ -74,10 +75,13 @@ function Offerings() {
       </section>
 
       <section className="join-us">
-        <h2>Get Involved Today</h2>
-        <p>Discover how you can support the growth of our students and be part of their successful journey in education.</p>
-        <a href="/contact">Join Us</a>
-      </section>
+  <h2>Get Involved Today</h2>
+  <p>
+    Discover how you can support the growth of our students and be part of
+    their successful journey in education.
+  </p>
+  <Link to="/contact">Join Us</Link>
+</section>
     </div>
   );
 }
