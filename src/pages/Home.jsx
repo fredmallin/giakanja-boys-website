@@ -10,7 +10,7 @@ function Home() {
 
   return (
     <>
-      {/* Fullscreen Hero at top with no wrapper */}
+      {/* Fullscreen Hero at top with adjusted height to remove extra white space */}
       <Hero
         images={[
           "/images/gallery.jpeg",
@@ -21,6 +21,7 @@ function Home() {
         subtitle="Empowering students to achieve excellence in academics and character."
         buttonText="View Assignments"
         buttonLink="/assignments"
+        height="calc(100vh - 80px)"  // ✅ This removes the extra space caused by the navbar
       />
 
       {/* Wrap the rest of the page content */}
