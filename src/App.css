@@ -122,9 +122,9 @@ body {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* default full screen */
-  background-size: cover;
-  background-position: center top;
+  min-height: 100vh;        /* allow natural growth if content is taller */
+  background-size: cover;   /* fills without stretching */
+  background-position: center center; /* better centering */
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -134,7 +134,7 @@ body {
   color: white;
   padding: 0 1rem;
   transition: background-image 1s ease-in-out;
-  z-index: 0; /* ensures navbar stays above if fixed */
+  z-index: 0;
 }
 
 /* Dark overlay */
