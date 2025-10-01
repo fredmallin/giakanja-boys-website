@@ -1601,3 +1601,17 @@ body, html {
 .hero-section {
   margin-top: 70px; /* Adjust this to match your navbar height */
 }
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page-container,
+.hero-section {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hero-section {
+  display: block;
+}

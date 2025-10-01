@@ -21,7 +21,8 @@ function Home() {
         subtitle="Empowering students to achieve excellence in academics and character."
         buttonText="View Assignments"
         buttonLink="/assignments"
-        height="calc(100vh - 80px)"  // ✅ This removes the extra space caused by the navbar
+        height="100vh"
+
       />
 
       {/* Wrap the rest of the page content */}
