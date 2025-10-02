@@ -19,12 +19,12 @@ function Navbar() {
 
       {/* Hamburger menu button (mobile only) */}
       <button
-        className="menu-btn"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle menu"
-      >
-        ☰
-      </button>
+  className="menu-btn"
+  onClick={() => setIsOpen(!isOpen)}
+  aria-label="Toggle menu"
+>
+  {isOpen ? "✖" : "☰"}
+</button>
 
       {/* Right: Links */}
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
