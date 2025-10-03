@@ -15,15 +15,12 @@ import Contact from "./pages/Contact";
 
 function App() {
   const location = useLocation();
-
-  // If on Home page => no padding
-  // If on any other page => apply padding
   const isHomePage = location.pathname === "/";
 
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
-      <main style={{ padding: isHomePage ? "0" : "1rem" }}>
+      <main className={`main-content ${isHomePage ? "home" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
