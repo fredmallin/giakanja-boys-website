@@ -11,7 +11,7 @@ function Events() {
       title: "Science Fair Exhibition",
       category: "ACADEMIC",
       description:
-        "Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.",
+        "Giakanja boys' is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.",
       time: "09:00 AM – 03:00 PM",
       location: "Main Auditorium",
       image: "/images/sciencefair.jpeg",
@@ -24,7 +24,7 @@ function Events() {
       title: "Annual Sports Day",
       category: "SPORTS",
       description:
-        "Tumutumu Girls is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.",
+        "Giakanja boys' is an institution that has stood as a beacon of hope, discipline, and academic excellence for generations.",
       time: "08:30 AM – 05:00 PM",
       location: "School Playground",
       image: "/images/sports runners.jpeg",

@@ -91,11 +91,11 @@ body {
 
 @media (max-width: 768px) {
   .menu-btn {
-    display: block; /* show hamburger */
+    display: block; 
   }
 
   .nav-links {
-    display: none; /* hide by default */
+    display: none;
     flex-direction: column;
     position: absolute;   /* NEW: ensures it overlays properly */
     top: 100%;            /* drops right below navbar */
@@ -1678,5 +1678,3 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
-
-
