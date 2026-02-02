@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -1218,7 +1219,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   background-color: #ffffff; /* white background */
@@ -1664,8 +1665,9 @@ body, html {
 /* Remove default margin from <main> that wraps all content */
 main {
   margin: 0 !important;
-  padding: 0 !important;
+  padding-top: 70px; /* height of your navbar */
 }
+
 
 /* Ensure Hero section sticks directly under Navbar */
 .hero-section {
@@ -1678,3 +1680,23 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+
+/* Make body fill the full viewport height */
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;       /* full height */
+  display: flex;
+  flex-direction: column;  /* stack header → main → footer */
+}
+
+/* Main content grows to take remaining space */
+main {
+  flex: 1; /* expand to fill space between navbar and footer */
+}
+
+/* Footer always sticks at bottom */
+.footer {
+  margin-top: 0; /* remove extra margin */
+}
+

@@ -10,7 +10,7 @@ function Home() {
 
   return (
     <>
-      {/* Fullscreen Hero at top with adjusted height to remove extra white space */}
+  
       <Hero
         images={[
           "/images/gallery.jpeg",
@@ -25,9 +25,7 @@ function Home() {
 
       />
 
-      {/* Wrap the rest of the page content */}
       <div className="page-container">
-        {/* Principal & Chairperson Messages */}
         <section className="messages scroll-fade">
           <div className="message-card">
             <img
@@ -72,7 +70,6 @@ function Home() {
           </div>
         </section>
 
-        {/* Offerings */}
         <section className="offerings scroll-fade">
           <h2>Our Offerings</h2>
           <div className="offering-cards">
@@ -111,7 +108,6 @@ function Home() {
           </div>
         </section>
 
-        {/* Values */}
         <section className="values scroll-fade">
           <h2>Our Values</h2>
           <div className="value-cards">
@@ -145,7 +141,6 @@ function Home() {
           </div>
         </section>
 
-        {/* Stats */}
         <section className="stats scroll-fade">
           <div className="stat">
             <img src="/images/group.png" alt="Teachers" className="stat-icon" />

@@ -10,7 +10,6 @@ function About() {
 
   return (
     <div className="page-container">
-      {/* Hero Section */}
       <section className="hero about-hero scroll-fade">
         <h1>About Giakanja Boys</h1>
         <p>
@@ -18,7 +17,6 @@ function About() {
         </p>
       </section>
 
-      {/* Vision & Journey */}
       <section className="about-vision scroll-fade">
         <h1>Our Vision</h1>
         <p>
@@ -37,7 +35,6 @@ function About() {
         </p>
       </section>
 
-      {/* 🚀 Tabs Section (Directly under Our Vision) */}
       <section className="about-tabs scroll-fade">
         <div className="tabs">
           <button
@@ -108,7 +105,6 @@ function About() {
         </div>
       </section>
 
-      {/* Core Values */}
       <section className="about-values scroll-fade">
         <h2>Core Values</h2>
         <div className="values-grid">
@@ -193,7 +189,6 @@ function About() {
         </div>
       </section>
 
-      {/* Join Us */}
       <section className="join-us scroll-fade">
   <h2>Get Involved</h2>
   <p>

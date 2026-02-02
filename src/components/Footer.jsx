@@ -21,7 +21,7 @@ function Footer() {
           <p><FaPhoneAlt /> +254 791 775 974</p>
           <p><FaWhatsapp style={{color: "#25D366"}} /> WhatsApp</p>
           <p><FaEnvelope /> Giakanjaboys'highschool@gmail.com</p>
-          <p><FaMapMarkerAlt /> Nyeri Othay Road, Nyeri County</p>
+          <p><FaMapMarkerAlt /> Nyeri Othaya Road, Nyeri County</p>
           <p><FaClock /> Mon - Fri | 8:00 AM - 6:00 PM</p>
         </div>
 
@@ -53,7 +53,7 @@ function Footer() {
 
       {/* Bottom Bar */}
       <div className="footer-bottom">
-        <p>© 2025 Giakanja Boys High School. All rights reserved.</p>
+        <p>© 2026 Giakanja Boys High School. All rights reserved.</p>
         <p>
           Developed by{" "}
           <a

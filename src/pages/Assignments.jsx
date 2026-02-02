@@ -94,7 +94,7 @@ export default function Assignments() {
                     download
                     className="text-blue-600 hover:underline"
                   >
-                    📘 {subject.name}
+                    {subject.name}
                   </a>
                 </li>
               ))}
