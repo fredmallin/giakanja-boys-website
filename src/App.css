@@ -122,8 +122,6 @@ body {
 }
 /* HERO SECTION */
 .hero-section {
-  margin: 0 !important;
-  padding: 0 !important;
   position: relative;
   width: 100%;
   height: 100vh;             /* Fullscreen */
@@ -231,6 +229,19 @@ body {
   }
 }
 
+/* ===== HERO MOBILE FIX ===== */
+.hero-section {
+  margin-top: -70px;
+  padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: -70px;
+    padding-top: 70px;
+    height: 100svh; /* svh = small viewport height, fixes mobile browser bar gap */
+  }
+}
 
 /* Main content */
 .main {

@@ -18,6 +18,8 @@ function Hero({ images, title, subtitle, height = "100vh", buttonText, buttonLin
       style={{
         backgroundImage: `url(${images[current]})`,
         height: height,
+        marginTop: "-70px",      
+        paddingTop: "70px",   
       }}
     >
       <div className="hero-overlay">
