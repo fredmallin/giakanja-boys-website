@@ -1663,22 +1663,14 @@ body {
 main {
   flex: 1;
   margin: 0;
-  padding-top: 70px;
 }
 
 .navbar {
-  position: fixed;
+   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-/* ✅ Hero pulls up to fill gap, padding keeps content visible */
-.hero-section {
-  margin-top: -70px !important;
-  padding-top: 70px !important;
-  height: 100svh !important;
 }
 
 .page-container {
