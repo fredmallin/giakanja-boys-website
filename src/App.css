@@ -1685,3 +1685,13 @@ main {
 section {
   background: #ffffff;
 }
+
+.main-content {
+  flex: 1;
+  margin: 0;
+  padding-top: 70px; 
+}
+
+.main-content.home {
+  padding-top: 0; 
+}

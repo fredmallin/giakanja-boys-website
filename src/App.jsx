@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="app-container">
       <Navbar />
-      <main className={`main-content ${isHomePage ? "home" : ""}`}>
+     <main className={`main-content ${isHomePage ? "home" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
