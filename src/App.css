@@ -229,19 +229,6 @@ body {
   }
 }
 
-/* ===== HERO MOBILE FIX ===== */
-.hero-section {
-  margin-top: -70px;
-  padding-top: 70px;
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    margin-top: -70px;
-    padding-top: 70px;
-    height: 100svh; /* svh = small viewport height, fixes mobile browser bar gap */
-  }
-}
 
 /* Main content */
 .main {
@@ -1676,7 +1663,7 @@ body {
 main {
   flex: 1;
   margin: 0;
-  padding-top: 70px; /* accounts for fixed navbar */
+  padding-top: 70px;
 }
 
 .navbar {
@@ -1687,10 +1674,16 @@ main {
   z-index: 1000;
 }
 
+/* ✅ Hero pulls up to fill gap, padding keeps content visible */
 .hero-section {
-  margin: 0 !important;
-  padding: 0 !important;
-  margin-top: -70px !important; /* pull hero up to cancel main's padding */
+  margin-top: -70px !important;
+  padding-top: 70px !important;
+  height: 100svh !important;
+}
+
+.page-container {
+  padding-top: 0;
+  width: 100%;
 }
 
 .footer {
