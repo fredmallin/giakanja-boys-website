@@ -13,7 +13,7 @@ body {
   color: #000000;            /* black text for readability */
 }
 .page-container {
-  min-height: calc(100vh - 70px); /* viewport minus navbar */
+  min-height: calc(100svh - 70px); /* viewport minus navbar */
   display: flex;
   flex-direction: column;
 }
@@ -124,7 +124,7 @@ body {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;             /* Fullscreen */
+  height: 100svh;             /* Fullscreen */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -501,7 +501,7 @@ body {
 
 .join-us {
   background: url('/images/join-us.jpeg') center/cover no-repeat;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -896,7 +896,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
@@ -1119,7 +1119,7 @@ body {
   position: relative;
   background: url("/images/Management.jpg") center/cover no-repeat;
   width: 100vw;        /* full width */
-  height: 100vh;       /* full screen */
+  height: 100svh;       /* full screen */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1333,7 +1333,7 @@ body {
   background: url("/images/events hero.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
-  height: 100vh;   /* full screen (or change to 400px if you want a banner) */
+  height: 100svh;   /* full screen (or change to 400px if you want a banner) */
   width: 100%;
   display: flex;
   align-items: center;
@@ -1601,7 +1601,7 @@ body {
 
   /* Events Hero should be shorter on mobile */
   .events-hero {
-    height: 60vh; /* instead of full screen */
+    height: 60svh; /* instead of full screen */
     padding: 40px 15px;
   }
 
@@ -1617,7 +1617,7 @@ body {
 @media (max-width: 480px) {
   /* Even smaller screens */
   .events-hero {
-    height: 50vh;
+    height: 50svh;
     padding: 30px 10px;
   }
 
@@ -1640,13 +1640,13 @@ html, body {
 }
 
 body {
-  min-height: 100vh;
+  min-height:100svh;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 main {
