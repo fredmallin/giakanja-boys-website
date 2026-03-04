@@ -13,9 +13,8 @@ body {
   color: #000000;            /* black text for readability */
 }
 .page-container {
-  min-height: 100svh; /* viewport minus navbar */
-  display: flex;
-  flex-direction: column;
+  display: block;
+  min-height: unset;
 }
 
 /* Navbar */
@@ -1619,11 +1618,6 @@ main {
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-.page-container {
-  padding-top: 0;
-  width: 100%;
 }
 
 .footer {
