@@ -15,12 +15,12 @@ import Contact from "./pages/Contact";
 
 function App() {
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  const hasHero = ["/", "/gallery", "/management", "/events", "/about"].includes(location.pathname);
 
   return (
     <div className="app-container">
       <Navbar />
-     <main className={`main-content ${isHomePage ? "home" : ""}`}>
+    <main className={`main-content ${hasHero ? "home" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
