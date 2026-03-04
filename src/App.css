@@ -1642,3 +1642,34 @@ main {
 .gallery-page {
   display: block;
 }
+
+/* UNIVERSAL DARK OVERLAY FOR ALL HERO SECTIONS */
+.hero-section::before,
+.hero.about-hero::before,
+.hero.gallery-hero::before,
+.hero.management-hero::before,
+.events-hero::before,
+.hero.home-hero::before {  /* add your home hero class here */
+  content: "";
+  position: absolute;
+  inset: 0; /* full coverage */
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent dark */
+  z-index: 1; /* sits under text */
+}
+
+/* Ensure text is above overlay */
+.hero-section h1,
+.hero-section p,
+.hero.about-hero h1,
+.hero.about-hero p,
+.hero.gallery-hero h1,
+.hero.gallery-hero p,
+.hero.management-hero h1,
+.hero.management-hero p,
+.events-hero h1,
+.events-hero p,
+.hero.home-hero h1,
+.hero.home-hero p {  /* include home hero text */
+  position: relative;
+  z-index: 2;
+}
