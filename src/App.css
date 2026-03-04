@@ -581,7 +581,21 @@ body {
   max-width: 700px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .hero.about-hero {
+    height: 60svh; /* shorter hero on phones */
+    padding: 0 10px; /* optional: reduce horizontal padding */
+  }
 
+  .hero.about-hero h1 {
+    font-size: 2rem; /* smaller text on mobile */
+  }
+
+  .hero.about-hero p {
+    font-size: 1rem; /* smaller subtitle */
+    max-width: 90%;  /* fits better on narrow screens */
+  }
+}
 /* ===== Core Values Section ===== */
 .about-values {
   background: #f9f9f9;
