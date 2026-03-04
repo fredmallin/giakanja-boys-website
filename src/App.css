@@ -1102,7 +1102,7 @@ body {
 .hero.management-hero {
   position: relative;
   background: url("/images/Management.jpg") center/cover no-repeat;
-  width: 100vw;        /* full width */
+ width: 100%;       /* full width */
   height: 100svh;       /* full screen */
   display: flex;
   align-items: center;
@@ -1628,8 +1628,4 @@ main {
 
 .footer {
   margin-top: 0;
-}
-
-.main-content.home {
-  padding-top: 0; 
 }
