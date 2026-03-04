@@ -9,7 +9,7 @@ function Home() {
   useScrollAnimation();
 
   return (
-    <>
+  <div className="page-container">
       {/* Hero Section */}
       <Hero
         images={[
@@ -182,7 +182,7 @@ function Home() {
 
       {/* Stats Counter Component */}
       <StatsCounter />
-    </>
+    </div>
   );
 }
 
