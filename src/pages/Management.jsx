@@ -3,7 +3,7 @@ import "../App.css";
 
 function SchoolManagement() {
   return (
-    <div className="page-container">
+   <div className="management-page">
       {/* Hero Section */}
      <section className="hero management-hero">
   <div className="hero-overlay">

@@ -829,7 +829,7 @@ body {
 }
 .hero.gallery-hero {
   background: url("/images/gallery.jpeg") center/cover no-repeat;
-  min-height: 100svh;   /* better than 100vh on mobile */
+ height: 100svh; /* better than 100vh on mobile */
   width: 100%;
   display: flex;
   align-items: center;
@@ -1628,4 +1628,9 @@ main {
 
 .footer {
   margin-top: 0;
+}
+
+.management-page,
+.gallery-page {
+  display: block;
 }

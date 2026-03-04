@@ -15,7 +15,7 @@ function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div className="page-container">
+   <div className="gallery-page">
       {/* Hero Section */}
       <section className="hero gallery-hero">
         <div className="hero-overlay">
