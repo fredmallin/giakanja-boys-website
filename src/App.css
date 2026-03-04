@@ -13,7 +13,7 @@ body {
   color: #000000;            /* black text for readability */
 }
 .page-container {
-  min-height: calc(100svh - 70px); /* viewport minus navbar */
+  min-height: 100svh; /* viewport minus navbar */
   display: flex;
   flex-direction: column;
 }
@@ -565,7 +565,7 @@ body {
   background: url("/images/ about.jpeg") center/cover no-repeat;
   color: #fff;
   text-align: center;
-  height: 100vh; 
+  height: 100svh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
