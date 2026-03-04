@@ -21,7 +21,7 @@ function Home() {
         subtitle="Empowering students to achieve excellence in academics and character."
         buttonText="View Assignments"
         buttonLink="/assignments"
-        height="100vh"
+        height="100svh"
 
       />
 

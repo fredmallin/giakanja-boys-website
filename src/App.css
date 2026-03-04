@@ -1629,9 +1629,6 @@ body {
     font-size: 0.9rem;
   }
 }
-section {
-  background: #ffffff;  
-}
 /* ===== LAYOUT FIX ===== */
 html, body {
   margin: 0;

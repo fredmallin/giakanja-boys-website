@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";  
+import { Link } from "react-router-dom";
 import "../App.css";
 
-function Hero({ images, title, subtitle, height = "100vh", buttonText, buttonLink }) {
+function Hero({ images, title, subtitle, height = "100svh", buttonText, buttonLink }) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -18,8 +18,6 @@ function Hero({ images, title, subtitle, height = "100vh", buttonText, buttonLin
       style={{
         backgroundImage: `url(${images[current]})`,
         height: height,
-        marginTop: "-70px",      
-        paddingTop: "70px",   
       }}
     >
       <div className="hero-overlay">
