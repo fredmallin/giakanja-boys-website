@@ -137,6 +137,7 @@ body {
   color: white;
   transition: background-image 1s ease-in-out;
   z-index: 0;
+
 }
 
 .hero-overlay {
@@ -394,7 +395,7 @@ body {
   background-color: #979595;
   border-radius: 12px;
   padding: 2rem;
-  flex: 1 1 200px;      
+  flex: 1 1 20px;      
   max-width: 240px;      
   display: flex;
   flex-direction: column;
@@ -614,7 +615,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
-  padding: 0 40px;
+  padding: 0 50px;
   max-width: 1200px;
   margin: 0 auto;
 }
