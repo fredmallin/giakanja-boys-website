@@ -9,17 +9,16 @@ body {
   padding: 0;
 }
 body {
-  background-color: #ffffff; /* white */
-  color: #000000;            /* black text for readability */
+  background-color: #ffffff; 
+  color: #000000;           
 }
 .page-container {
   display: block;
   min-height: unset;
 }
 
-/* Navbar */
 .navbar {
-  position: sticky; /* keeps it at the top when scrolling */
+  position: sticky;
   top: 0;
   background-color: #0e9c66;
   padding: 0.5rem 1rem;
@@ -32,7 +31,6 @@ body {
    flex-wrap: nowrap;   
 }
 
-/* Brand (Logo + Name) */
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -42,16 +40,16 @@ body {
 .school-logo {
   width: 45px;
   height: 45px;
-  border-radius: 50%; /* circular logo */
+  border-radius: 50%; 
 }
 
 .school-name {
-  font-size: 1.2rem;       /* smaller on default */
+  font-size: 1.2rem;     
   font-weight: bold;
   color: #ffca28;
-  white-space: nowrap;     /* prevent wrapping on small screens */
+  white-space: nowrap;     
 }
-/* Nav links (desktop default) */
+
 .nav-links {
   display: flex;
   gap: 1rem;
@@ -74,12 +72,11 @@ body {
   background-color: #1cdfed; 
 }
 
-/* Hamburger button (hidden on desktop) */
+
 .menu-btn {
-  display: none;
-  font-size: 1.6rem;  /* smaller size */
-  line-height: 1;     /* prevents extra height */
-  width: 40px;        /* consistent box */
+  font-size: 1.6rem;  
+  line-height: 1;     
+  width: 40px;       
   height: 40px;
   background: none;
   border: none;
@@ -90,27 +87,32 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 769px) {
+  .menu-btn {
+    visibility: hidden;  /* ✅ hides it but keeps the space */
+    pointer-events: none;
+  }
+}
 
 @media (max-width: 768px) {
   .menu-btn {
-    display: block; 
+    display: flex;
   }
-
   .nav-links {
     display: none;
     flex-direction: column;
-    position: absolute;   /* NEW: ensures it overlays properly */
-    top: 100%;            /* drops right below navbar */
+    position: absolute;  
+    top: 100%;           
     left: 0;
-    width: 100%;          /* full width */
+    width: 100%;         
     background-color: #0f6d0f;
     border-radius: 0 0 8px 8px;
     padding: 10px 0;
-    z-index: 999;         /* keep on top of content */
+    z-index: 999;        
   }
 
   .nav-links.open {
-    display: flex; /* show when menu is open */
+    display: flex; 
   }
 
   .nav-links a {
@@ -119,11 +121,11 @@ body {
     text-align: left;
   }
 }
-/* HERO SECTION */
+
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100svh;             /* Fullscreen */
+  height: 100svh;             
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -135,18 +137,15 @@ body {
   color: white;
   transition: background-image 1s ease-in-out;
   z-index: 0;
-  margin-top: -60px;
 }
 
-/* Hero content */
 .hero-overlay {
   position: relative;
-  z-index: 2; /* Above overlay */
+  z-index: 2; 
   max-width: 800px;
   padding: 20px;
 }
 
-/* Headline */
 .hero-overlay h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 1rem;
@@ -158,7 +157,6 @@ body {
   animation-delay: 0.3s;
 }
 
-/* Subheading */
 .hero-overlay p {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 2rem;
@@ -169,7 +167,7 @@ body {
   animation-delay: 0.6s;
 }
 
-/* Call-to-action button */
+
 .hero-overlay .hero-btn {
   display: inline-block;
   padding: 12px 25px;
@@ -190,7 +188,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Fade Up Animation */
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -206,20 +203,17 @@ body {
     background-size: 100%;
   }
   50% {
-    background-size: 110%; /* zoom in */
+    background-size: 110%; 
   }
   100% {
-    background-size: 100%; /* zoom out */
+    background-size: 100%; 
   }
 }
 
-
-/* Main content */
 .main {
   padding: 0;
 }
 
-/* Assignments page */
 .form-buttons {
   display: flex;
   gap: 1rem;
@@ -235,7 +229,6 @@ body {
   margin-top: 1rem;
 }
 
-/* Footer Styling */
 .footer {
   background: #0e9c66;
   color: white;
@@ -316,16 +309,15 @@ body {
   font-size: 0.9rem;
 }
 .footer-bottom a {
-  color: #ffca28; /* golden yellow to match your theme */
+  color: #ffca28; 
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-bottom a:hover {
-  color: #21d4e0; /* light blue on hover */
+  color: #21d4e0; 
 }
 
-/* Messages */
 .messages {
   display: flex;
   flex-wrap: wrap;
@@ -340,7 +332,7 @@ body {
   margin: 1rem;
   border-radius: 10px;
   text-align: center;
-  flex: 1; /* if inside flex container */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -359,7 +351,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Offerings */
 .offerings {
   padding: 2rem;
   text-align: center;
@@ -394,9 +385,9 @@ body {
 
 .value-cards {
   display: flex;
-  flex-wrap: wrap;      /* allows wrapping on smaller screens */
+  flex-wrap: wrap;      
   justify-content: center;
-  gap: 1.5rem;          /* space between boxes */
+  gap: 1.5rem;          
 }
 
 .value-card {
@@ -430,7 +421,6 @@ body {
   color: #181717;
 }
 
-/* optional hover effect */
 .value-card:hover {
   transform: translateY(-5px);
 }
@@ -467,7 +457,7 @@ body {
 }
 
 .stat h3.count {
-  font-size: 2.2rem; /* bigger number */
+  font-size: 2.2rem; 
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #ffffff;
@@ -490,13 +480,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff; /* white text for clarity */
+  color: #fff; 
   text-align: center;
   padding: 2rem;
   position: relative;
 }
 
-/* Optional overlay for better readability */
 .join-us::before {
   content: "";
   position: absolute;
@@ -504,7 +493,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  background: rgba(0, 0, 0, 0.4); 
   z-index: 0;
 }
 
@@ -512,7 +501,7 @@ body {
 .join-us p,
 .join-us a {
   position: relative;
-  z-index: 1; /* keep text above overlay */
+  z-index: 1; 
 }
 
 .join-us h2 {
@@ -530,8 +519,8 @@ body {
 .join-us a {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #ecfafc; /* golden button */
-  color: #1a237e; /* dark blue text */
+  background-color: #ecfafc; 
+  color: #1a237e; 
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -545,7 +534,7 @@ body {
 
 /* ===== Hero Section ===== */
 .hero.about-hero {
-  position: relative; /* ✅ Important for overlay */
+  position: relative; 
   background: url("/images/ about.jpeg") center/cover no-repeat;
   color: #fff;
   text-align: center;
@@ -557,7 +546,6 @@ body {
   padding: 0 20px; 
 }
 
-/* Optional: Add overlay for text contrast */
 .hero.about-hero::before {
   content: "";
   position: absolute;
@@ -584,17 +572,17 @@ body {
 }
 @media (max-width: 768px) {
   .hero.about-hero {
-    height: 60svh; /* shorter hero on phones */
-    padding: 0 10px; /* optional: reduce horizontal padding */
+    height: 60svh; 
+    padding: 0 10px; 
   }
 
   .hero.about-hero h1 {
-    font-size: 2rem; /* smaller text on mobile */
+    font-size: 2rem; 
   }
 
   .hero.about-hero p {
-    font-size: 1rem; /* smaller subtitle */
-    max-width: 90%;  /* fits better on narrow screens */
+    font-size: 1rem; 
+    max-width: 90%;  
   }
 }
 /* ===== Core Values Section ===== */
@@ -624,7 +612,7 @@ body {
 /* Grid layout */
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   padding: 0 40px;
   max-width: 1200px;
@@ -655,7 +643,7 @@ body {
 /* ===== Vision & Journey Section ===== */
 .about-vision {
   width: 90%;
-  max-width: 1200px; /* instead of 900px */
+  max-width: 1200px; 
   margin: 80px auto;
 }
 
@@ -727,15 +715,14 @@ body {
 .tab-content .image,
 .tab-content .card img {
   width: 100%;
-  max-width: 420px;   /* much larger */
-  height: 260px;      /* taller */
+  max-width: 420px;  
+  height: 260px;     
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1.2rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.18);
 }
 
-/* Grid Layout (spaced out more for big cards) */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -748,11 +735,11 @@ body {
 .card {
   background: #fff;
   border-radius: 14px;
-  padding: 1.5rem;   /* more breathing space */
+  padding: 1.5rem;   
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   text-align: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  max-width: 460px;  /* big card */
+  max-width: 460px;  
 }
 
 .card:hover {
@@ -822,11 +809,10 @@ body {
 .gallery-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);   /* Default: 3 columns */
-  grid-auto-rows: 250px;                   /* Consistent row height */
+  grid-template-columns: repeat(3, 1fr);   
+  grid-auto-rows: 250px;                  
 }
 
-/* Tablet (≤ 1024px) → 2 columns */
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -834,7 +820,6 @@ body {
   }
 }
 
-/* Mobile (≤ 640px) → 1 column */
 @media (max-width: 640px) {
   .gallery-grid {
     grid-template-columns: 1fr;
@@ -843,7 +828,7 @@ body {
 }
 .hero.gallery-hero {
   background: url("/images/gallery.jpeg") center/cover no-repeat;
- height: 100svh; /* better than 100vh on mobile */
+ height: 100svh; 
   width: 100%;
   display: flex;
   align-items: center;
@@ -861,7 +846,7 @@ body {
     background-size: 100%;
   }
   50% {
-    background-size: 110%; /* zoom in */
+    background-size: 110%; 
   }
   100% {
     background-size: 100%;
@@ -1116,15 +1101,15 @@ body {
 .hero.management-hero {
   position: relative;
   background: url("/images/Management.jpg") center/cover no-repeat;
- width: 100%;       /* full width */
-  height: 100svh;       /* full screen */
+ width: 100%;       
+  height: 100svh;       
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  overflow: hidden;    /* ensure zoom doesn't overflow */
-  animation: zoomHero 15s ease-in-out infinite; /* zoom animation */
+  overflow: hidden;    
+  animation: zoomHero 15s ease-in-out infinite; 
   z-index: 0;
 }
 
@@ -1197,7 +1182,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #ffffff; /* white background */
+  background-color: #ffffff; 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -1319,7 +1304,7 @@ body {
   background: url("/images/events hero.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
-  height: 100svh;   /* full screen (or change to 400px if you want a banner) */
+  height: 100svh;   
   width: 100%;
   display: flex;
   align-items: center;
@@ -1327,7 +1312,7 @@ body {
   padding: 0 20px;
 
   animation: zoomHero 15s ease-in-out infinite;
-  overflow: hidden; /* make sure overlay fits inside */
+  overflow: hidden;
 }
 
 
@@ -1478,7 +1463,7 @@ body {
 @media (max-width: 768px) {
   /* Values section */
   .values-grid {
-    grid-template-columns: 1fr;  /* stack vertically */
+    grid-template-columns: 1fr;  
     padding: 0 10px;
   }
 
@@ -1492,7 +1477,7 @@ body {
   .offering-cards,
   .program-cards,
   .why-cards {
-    flex-direction: column;   /* stack instead of row */
+    flex-direction: column;   
     align-items: center;
   }
 
@@ -1540,14 +1525,14 @@ body {
 }
 /* 📱 Mobile responsiveness fixes */
 @media (max-width: 768px) {
-  /* --- Events Fix --- */
+
   .event-card {
-    flex-direction: column; /* stack vertically */
+    flex-direction: column; 
   }
 
   .event-image img {
-    width: 100%;   /* take full width */
-    height: 200px; /* fixed height */
+    width: 100%;   
+    height: 200px; 
   }
 
   .event-date {
@@ -1571,13 +1556,13 @@ body {
   }
 
   .btn, .btn-outline {
-    width: 100%;  /* full-width buttons on mobile */
+    width: 100%;  
     text-align: center;
   }
 
   /* Events Hero should be shorter on mobile */
   .events-hero {
-    height: 60svh; /* instead of full screen */
+    height: 60svh; 
     padding: 40px 15px;
   }
 
@@ -1650,12 +1635,12 @@ main {
 .hero.gallery-hero::before,
 .hero.management-hero::before,
 .events-hero::before,
-.hero.home-hero::before {  /* add your home hero class here */
+.hero.home-hero::before {  
   content: "";
   position: absolute;
   inset: 0; /* full coverage */
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent dark */
-  z-index: 1; /* sits under text */
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
 }
 
 /* Ensure text is above overlay */
@@ -1670,7 +1655,14 @@ main {
 .events-hero h1,
 .events-hero p,
 .hero.home-hero h1,
-.hero.home-hero p {  /* include home hero text */
+.hero.home-hero p {  
   position: relative;
   z-index: 2;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
