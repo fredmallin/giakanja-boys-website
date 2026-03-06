@@ -79,8 +79,8 @@ function Events() {
               <h3>{event.title}</h3>
               <p>{event.description}</p>
               <p className="event-meta">
-                ⏰ {event.time} <br />
-                📍 {event.location}
+                 {event.time} <br />
+                 {event.location}
               </p>
               <div className="event-actions">
                 <button className="btn">Learn More</button>
