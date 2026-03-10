@@ -7,7 +7,7 @@ function SchoolManagement() {
       {/* Hero Section */}
      <section className="hero management-hero">
   <div className="hero-overlay">
-    <h1>Giakanja Boys High School</h1>
+    <h1>Our School Management</h1>
     <p>Shaping Character, Nurturing Excellence</p>
   </div>
 </section>

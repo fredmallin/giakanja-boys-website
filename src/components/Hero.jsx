@@ -14,10 +14,9 @@ function Hero({ images, title, subtitle, height = "100svh", buttonText, buttonLi
 
   return (
     <section
-      className="hero-section zoom-effect"
+     className="hero-section"
       style={{
         backgroundImage: `url(${images[current]})`,
-        height: height,
       }}
     >
       <div className="hero-overlay">

@@ -44,7 +44,7 @@ function Contact() {
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="hero-overlay">
-          <h1>Contact Giakanja Boys' High School</h1>
+          <h1> Giakanja Boys' High School</h1>
           <p>We’re here to answer your questions and help you get in touch with us</p>
         </div>
       </section>
