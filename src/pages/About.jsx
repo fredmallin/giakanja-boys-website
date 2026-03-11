@@ -61,16 +61,54 @@ function About() {
         <div className="tab-content">
           {activeTab === "sports" && (
             <div>
-              <h2>Sports</h2>
-              <p>The school offers Football, Basketball, Rugby, Athletics...</p>
-              <img src="/images/sports.jpeg" alt="Sports" className="image" />
-            </div>
+
+    <div>
+      <h2>Sports</h2>
+      <p>The school offers Football, Basketball, Rugby, Athletics...</p>
+      <img src="/images/sports.jpeg" alt="Sports" className="image" />
+    </div>
+
+    <div className="card">
+      <img src="/images/st john.jpeg" alt="St John's Ambulance" />
+      <p>St John's Ambulance</p>
+    </div>
+
+  </div>
+            
           )}
 
           {activeTab === "clubs" && (
             <div>
               <h2>Clubs & Societies</h2>
               <div className="grid">
+                <div className="card">
+                  <img src="/images/st john.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
+                </div>
+                <div className="card">
+                  <img src="/images/st john.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
+                </div>
+                <div className="card">
+                  <img src="/images/photo.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
+                </div>
+                <div className="card">
+                  <img src="/images/st john.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
+                </div>
+                <div className="card">
+                  <img src="/images/st john.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
+                </div>
+                <div className="card">
+                  <img src="/images/st john.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
+                </div>
+                <div className="card">
+                  <img src="/images/st john.jpeg" alt="St john's Ambulance" />
+                  <p>St john's Ambulance</p>
+                </div>
                 <div className="card">
                   <img src="/images/st john.jpeg" alt="St john's Ambulance" />
                   <p>St john's Ambulance</p>
@@ -90,6 +128,37 @@ function About() {
                 <div className="card">
                   <img src="/images/livingstone.jpg" alt="Livingstone House" />
                   <p>Livingstone House: Named after Dr. David Livingstone</p>
+                </div>
+                <div className="card">
+                  <img src="public/images/photo.jpeg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div>
+                <div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div>
+                <div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div>
+                <div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div><div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div>
+                <div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div>
+                <div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
+                </div>
+                <div className="card">
+                  <img src="/images/aggrey.jpg" alt="Aggrey House" />
+                  <p>Aggrey House: Named after Dr. Aggrey of Achimota</p>
                 </div>
                 <div className="card">
                   <img src="/images/aggrey.jpg" alt="Aggrey House" />

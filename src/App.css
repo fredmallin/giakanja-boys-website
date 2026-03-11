@@ -17,6 +17,7 @@ body {
   min-height: unset;
 }
 
+
 .navbar {
   position: sticky;
   top: 0;
@@ -1639,4 +1640,34 @@ body {
   overflow-x: hidden;
 }
 
+/* ===== NAVBAR OVERFLOW FIX FOR SMALLER DESKTOP SCREENS ===== */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .nav-links {
+    gap: 0.2rem;
+  }
 
+  .nav-links a {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .school-name {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 950px) {
+  .nav-links a {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.78rem;
+  }
+
+  .school-name {
+    font-size: 0.9rem;
+  }
+
+  .school-logo {
+    width: 35px;
+    height: 35px;
+  }
+}
