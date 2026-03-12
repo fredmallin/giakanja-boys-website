@@ -1587,10 +1587,14 @@ body {
 }
 
 #root {
-  display: block;        /* was: flex — this was stretching main */
-  min-height: unset;     /* was: 100svh */
+  display: block;
+  min-height: unset;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
-
 main {
   display: block;
   margin: 0;
@@ -1706,6 +1710,3 @@ body {
   box-sizing: border-box;
 }
 
-* {
-  outline: 1px solid red;
-}
