@@ -21,6 +21,8 @@ body {
 .navbar {
   position: sticky;
   top: 0;
+  left: 0;         
+  width: 100vw;  
   background-color: #0e9c66;
   padding: 0.5rem 1rem;
   color: white;
@@ -224,6 +226,9 @@ body {
   color: white;
   padding: 3rem 1rem 1.5rem;
   margin-top: 3rem;
+  width: 100%;           
+  max-width: 100%;      
+  box-sizing: border-box; 
 }
 
 .footer-content {
@@ -567,7 +572,7 @@ body {
 .hero.about-hero h1,
 .hero.about-hero p {
   position: relative;
-  z-index: 2; /* Text above overlay */
+  z-index: 2; 
 }
 
 .hero.about-hero h1 {
@@ -1633,11 +1638,15 @@ main {
   z-index: 2;
 }
 
+/* AFTER */
 html {
   overflow-x: hidden;
+  width: 100%;
 }
 body {
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* ===== NAVBAR OVERFLOW FIX FOR SMALLER DESKTOP SCREENS ===== */
