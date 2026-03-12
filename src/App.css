@@ -15,8 +15,10 @@ body {
 .page-container {
   display: block;
   min-height: unset;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
-
 
 .navbar {
   position: sticky;
@@ -671,7 +673,7 @@ body {
 }
 .about-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -680,7 +682,7 @@ body {
 .about-tabs {
   margin: 3rem auto;
   padding: 2rem;
-  max-width: 1000px;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -1140,10 +1142,11 @@ body {
 }
 .management-section {
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 100%;   /* was 900px */
+  width: 100%;
+  box-sizing: border-box;
   margin: auto;
 }
-
 .management-section h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -1679,4 +1682,20 @@ body {
     width: 35px;
     height: 35px;
   }
+}
+
+.main-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
