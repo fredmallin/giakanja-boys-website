@@ -1243,6 +1243,14 @@ body {
   background-color: #005fa3;
 }
 
+.contact-hero {
+  width: 100%;
+  background: #757877;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
 .success-msg {
   text-align: center;
   color: green;
