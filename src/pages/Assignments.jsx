@@ -71,37 +71,51 @@ export default function Assignments() {
   };
 
   return (
-    <main className="w-full px-4 py-10">
-      <h1 className="text-3xl font-bold text-green-700 mb-8 text-center">
-        Assignments
-      </h1>
+  <main className="w-full px-4 py-10">
+    <h1 className="text-3xl font-bold text-green-700 mb-8 text-center">
+      Assignments
+    </h1>
 
+    {/* FORM BUTTON ROW */}
+   <div className="form-buttons">
       {Object.keys(assignments).map((form) => (
-        <div key={form} className="mb-4 border border-gray-200 rounded shadow-sm">
-          <button
-            onClick={() => toggleForm(form)}
-            className="w-full text-left px-6 py-3 text-lg font-semibold bg-green-100 hover:bg-green-200 rounded-t"
-          >
-            {form}
-          </button>
-
-          {openForm === form && (
-            <ul className="bg-white p-4 space-y-2">
-              {assignments[form].map((subject) => (
-                <li key={subject.file}>
-                  <a
-                    href={`/pdfs/${subject.file}`}
-                    download
-                    className="text-blue-600 hover:underline"
-                  >
-                    {subject.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <button
+          key={form}
+          onClick={() => toggleForm(form)}
+          className={`px-6 py-3 rounded-lg font-semibold shadow
+            ${
+              openForm === form
+                ? "bg-green-600 text-white"
+                : "bg-green-100 hover:bg-green-200"
+            }`}
+        >
+          {form}
+        </button>
       ))}
-    </main>
-  );
+    </div>
+
+    {/* SUBJECT LIST */}
+    {openForm && (
+      <div className="max-w-xl mx-auto bg-white border rounded shadow p-6">
+        <h2 className="text-xl font-bold mb-4 text-center text-green-700">
+          {openForm} Subjects
+        </h2>
+
+        <ul className="space-y-2">
+          {assignments[openForm].map((subject) => (
+            <li key={subject.file}>
+              <a
+                href={`/pdfs/${subject.file}`}
+                download
+                className="text-blue-600 hover:underline"
+              >
+                {subject.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </main>
+);
 }

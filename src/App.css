@@ -933,13 +933,13 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 5rem;
   margin-bottom: 2rem;
 }
 
 .form-buttons button {
   padding: 0.6rem 1.2rem;
-  background-color: #2bcad5;
+  background-color: #050808;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -985,7 +985,7 @@ body {
 }
 
 .subjects-container a {
-  color: #007bff;
+  color: #050709;
   text-decoration: none;
   font-weight: 500;
 }
@@ -1019,6 +1019,19 @@ body {
 
   .subjects-container h2 {
     font-size: 1.3rem;
+  }
+}
+
+/* Desktop / Laptop Only */
+@media (min-width: 992px) {
+  .form-buttons {
+    flex-direction: row;
+    flex-wrap: nowrap;   /* keeps buttons on one straight line */
+    justify-content: center;
+  }
+
+  .form-buttons button {
+    width: auto;
   }
 }
 
