@@ -19,7 +19,7 @@ function Footer() {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p><FaPhoneAlt /> <a href="tel:+254791775974">+254 791 775 974</a></p>
-<p><a href="https://wa.me/254791775974" target="_blank" rel="noopener noreferrer">
+<p><a href="https://wa.me/254748257989" target="_blank" rel="noopener noreferrer">
   <FaWhatsapp style={{color: "#25D366"}} /> WhatsApp
 </a></p>
           <p><FaEnvelope /> Giakanjaboys'highschool@gmail.com</p>
