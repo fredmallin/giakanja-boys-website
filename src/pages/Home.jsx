@@ -14,7 +14,7 @@ function Home() {
       <Hero
         images={[
           "/images/gallery.jpeg",
-          "/images/schoolgate3.jpg",
+          "/images/schoolgateeee.png",
           "/images/Management.jpg",
         ]}
         title="Giakanja Boys High School"
